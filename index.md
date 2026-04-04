@@ -57,3 +57,16 @@ Complete before the first class (2-3 hours total).
 
 *Materials released before class.*
 
+
+---
+
+## Blog
+
+Notes from building this course — what worked, what broke, what surprised us.
+
+- [Picking a Model for Teaching](blog/01_picking_a_model_for_teaching.md)
+- [Model Cards Won't Tell You If Your Course Will Work](blog/02_model_cards_wont_tell_you.md)
+- [What Do You Teach When Compression Doesn't Produce a Speedup?](blog/03_when_compression_doesnt_help.md)
+- [When Your "Ready to Use" Dataset Has the Same Category Listed Twice](blog/04_the_label_problem.md)
+- [Your T4 Training Is 4x Slower Than It Should Be](blog/05_bf16_on_t4.md)
+
