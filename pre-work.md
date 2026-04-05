@@ -20,3 +20,4 @@ Each module has a short slide deck and a hands-on Kaggle notebook.
 | 6 | LoRA/PEFT Basics | [Slides](pre-work/06_lora_peft_basics/slides.html) | [Notebook](https://github.com/earino/applied-deep-learning/blob/main/pre-work/06_lora_peft_basics/notebook.ipynb) |
 | 7 | Quantization Basics | [Slides](pre-work/07_quantization_basics/slides.html) | [Notebook](https://github.com/earino/applied-deep-learning/blob/main/pre-work/07_quantization_basics/notebook.ipynb) |
 | 8 | The Distillation Idea | [Slides](pre-work/08_distillation_idea/slides.html) | [Notebook](https://github.com/earino/applied-deep-learning/blob/main/pre-work/08_distillation_idea/notebook.ipynb) |
+| 9 | How LLMs Are Built (Optional) | [Slides](pre-work/09_how_llms_are_built/slides.html) |  |

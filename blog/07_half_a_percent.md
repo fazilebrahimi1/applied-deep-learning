@@ -1,11 +1,11 @@
 ---
-title: "Half a Percent"
+title: "Half a Percent: Thoughts and Results on Decoders for Hard Text Classification"
 layout: default
 parent: Blog
 nav_order: 7
 ---
 
-# Half a Percent
+# Half a Percent: Thoughts and Results on Decoders for Hard Text Classification
 
 BERT’s founding argument was that bidirectional attention produces better sentence representations than left-to-right attention. That argument launched a decade of “use an encoder for classification.” The argument was sound. The field moved on.
 
