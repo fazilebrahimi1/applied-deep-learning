@@ -18,5 +18,5 @@ nav_order: 2
 
 **Memo rubric:** [week2_memo_rubric.md](../week2/week2_memo_rubric.md)
 
-**Readings:** [9 paper PDFs](https://github.com/earino/applied-deep-learning/tree/main/week2/readings) (Zhang 2017 – Shi 2024). Pick 2–3 that connect to your memo.
+**Readings:** [9 paper PDFs](https://github.com/earino/applied-deep-learning/tree/main/week2/readings). Pick 2–3 that connect to your memo.
 
