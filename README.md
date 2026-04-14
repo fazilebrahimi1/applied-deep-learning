@@ -63,8 +63,17 @@ Open any `.ipynb` notebook in Kaggle, Colab, or your local Jupyter environment. 
 │   ├── week1_homework.ipynb
 │   └── week1_memo_rubric.md
 │
-├── week2/                     # Controlled improvement and failure analysis
-│   └── ...
+├── week2/                     # Controlled improvement and error analysis
+│   ├── slides.html
+│   ├── slides.pdf
+│   ├── week2_lab.ipynb
+│   ├── week2_homework.ipynb
+│   ├── week2_memo_rubric.md
+│   └── readings/             # 9 paper PDFs (Zhang 2017 – Shi 2024)
+│
+├── site/blog/                 # Instructor blog posts on course design
+│
+├── experiments/               # Reproducible training notebooks
 │
 └── ...                        # Weeks 3-6 released weekly
 ```
@@ -76,8 +85,8 @@ Open any `.ipynb` notebook in Kaggle, Colab, or your local Jupyter environment. 
 | Week | Topic | Date |
 |:---:|:---|:---:|
 | — | [Pre-work](pre-work/) (2-3 hours) | Before Apr 8 |
-| 1 | Fine-tuning and data audit | Apr 8 |
-| 2 | Controlled improvement and failure analysis | Apr 15 |
+| 1 | [Fine-tuning and data audit](week1/) | Apr 8 |
+| 2 | [Controlled improvement and error analysis](week2/) | Apr 15 |
 | 3 | Parameter-efficient adaptation (LoRA/PEFT) | Apr 22 |
 | 4 | Error analysis, slices, calibration, decoder comparison | Apr 29 |
 | 5 | Quantization and decoder economics | May 6 |
@@ -88,6 +97,7 @@ Each week contains:
 - **Lab notebook** — completable during the Block 2 lab session
 - **Homework notebook** — analysis, experiments, and embedded memo prompts
 - **Memo rubric** — what the weekly technical note should cover
+- **Readings** — curated paper PDFs referenced in the lecture (starting Week 2)
 
 Materials are released weekly before each class.
 
