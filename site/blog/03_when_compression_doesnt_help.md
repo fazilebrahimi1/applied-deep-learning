@@ -2,7 +2,7 @@
 title: "What Do You Teach When Compression Doesn't Produce a Speedup?"
 layout: default
 parent: Blog
-nav_order: 7
+nav_order: 8
 ---
 
 # What Do You Teach When Compression Doesn't Produce a Speedup?

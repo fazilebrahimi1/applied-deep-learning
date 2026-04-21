@@ -11,6 +11,9 @@ Notes from building this course — what worked, what broke, what surprised us.
 
 ---
 
+**[No magic, but first: a transformers PR](10_small_decoder_ecosystem_gap.html)**
+The core teaching arc of my applied deep learning course at CEU is simple: **there's no magic**. Every part of a modern NLP pipeline — the data mix, the tokenizer, the model weights, the training re
+
 **[When Better Means Worse](09_when_better_means_worse.html)**
 I applied class weighting to a 113-category text classifier. Accuracy dropped five points. Macro F1 improved. Ten classes that the model had never once predicted correctly started getting nonzero F1.
 

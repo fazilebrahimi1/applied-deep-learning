@@ -2,7 +2,7 @@
 title: "The Questions Model Cards Don't Answer"
 layout: default
 parent: Blog
-nav_order: 8
+nav_order: 9
 ---
 
 # The Questions Model Cards Don't Answer
