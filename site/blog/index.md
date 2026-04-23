@@ -11,6 +11,9 @@ Notes from building this course — what worked, what broke, what surprised us.
 
 ---
 
+**[Your int8 Quantization Is 2.5× Slower Than fp16](11_int8_is_slower.html)**
+The LLM.int8 paper from 2022 told you this would happen. The blog tutorials skip that part.
+
 **[No magic, but first: a transformers PR](10_small_decoder_ecosystem_gap.html)**
 The core teaching arc of my applied deep learning course at CEU is simple: **there's no magic**. Every part of a modern NLP pipeline — the data mix, the tokenizer, the model weights, the training re
 

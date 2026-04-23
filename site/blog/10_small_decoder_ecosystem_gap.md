@@ -2,7 +2,7 @@
 title: "No magic, but first: a transformers PR"
 layout: default
 parent: Blog
-nav_order: 1
+nav_order: 2
 ---
 
 # No magic, but first: a transformers PR
