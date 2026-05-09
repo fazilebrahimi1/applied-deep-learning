@@ -21,9 +21,11 @@ Same model, same data, same epochs, same seed. The vanilla student trained with 
 
 T-scaling drops ECE by 0.1045. KD drops it by 0.0762. Ratio: 137%. Macro F1 is identical pre and post T-scaling because temperature scaling can't change argmax. The F1 gain from KD here is inside bootstrap noise on most tiers.
 
-![Reliability diagram showing vanilla raw bowed below the diagonal (overconfident), Vanilla+T hugging the diagonal (well calibrated), Distilled in between.](images/blog12_reliability.png)
+<img src="images/blog12_reliability.png" alt="Reliability diagram: vanilla raw bows below the diagonal everywhere (overconfident), Vanilla+T hugs the diagonal (well calibrated), Distilled sits in between." style="float:right; width:400px; margin:0 0 10px 20px;">
 
-ECE is literally the area between each curve and the diagonal. The cheap fix pulls the blue curve onto the line. KD only gets part of the way there.
+The reliability diagram on the right is how you read ECE visually. Bin every prediction by the model's claimed confidence (X axis). For each bin, plot how often the model was actually right (Y axis). Perfect calibration puts every point on the dashed diagonal — when the model says 70%, it's right 70% of the time. ECE is the average gap between curve and diagonal.
+
+Vanilla raw (red) sits well below the diagonal at every confidence level — when it claims 60% confidence, it's right around 45% of the time. Overconfident across the board. Vanilla + T (blue) pulls the whole curve back onto the diagonal: one fitted scalar, no retraining, calibration recovered. Distilled (gray) closes part of the gap but doesn't reach the diagonal.
 
 ## Why ECE moves and NLL doesn't
 
@@ -33,9 +35,11 @@ ECE asks whether top-1 confidence tracks empirical accuracy. A single global res
 
 NLL is different. It penalizes probability placed on wrong classes too, not just miscalibration on the winning one. T-scaling can't push class 53's mass toward class 12 on one example and toward class 89 on another. The rescaling is global, not per-example. KD trains against the teacher's full softmax for each example. T-scaling never sees that information. That is the cleanest explanation for KD's NLL win here.
 
-![Scatter plot with NLL on the X axis and ECE on the Y axis. Three points: vanilla raw in the upper right, Vanilla+T below it (lower ECE), Distilled to the left (lower NLL). Arrows from vanilla raw show that T-scaling drops you straight down on ECE while KD takes you diagonally down and to the left.](images/blog12_ece_nll_scatter.png)
+<img src="images/blog12_ece_nll_scatter.png" alt="Scatter plot with NLL on the X axis (lower is better) and ECE on the Y axis (lower is better). Vanilla raw is in the upper right. Two arrows from vanilla raw: one pulls straight down to Vanilla+T (drops ECE only). One pulls diagonally to Distilled (drops both axes, more NLL than ECE)." style="float:right; width:400px; margin:0 0 10px 20px;">
 
-Two arrows from the same starting point, two different corners of the plane. Vanilla+T lands in the low-ECE corner but barely moves on NLL. Distilled trades off less ECE drop for a real NLL drop. You can't get to one corner with the other method.
+The scatter on the right plots the same three runs on a 2D plane. NLL on the X axis, ECE on the Y axis, lower is better on both — so the bottom-left corner is where you want to be.
+
+Each method takes you in a different direction from vanilla raw (upper right). T-scaling pulls you straight down: ECE collapses, NLL barely moves. KD pulls you diagonally: NLL drops further than T-scaling reached, but ECE drops less. You cannot reach Vanilla+T's corner with KD, and you cannot reach Distilled's corner with T-scaling. The two methods occupy different corners of the plane because they fix different things.
 
 ## Han Guo 2021 explains why this works
 
