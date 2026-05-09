@@ -1,10 +1,3 @@
----
-title: "You Can't Scale Your Way Out of a Data Problem"
-layout: default
-parent: Blog
-nav_order: 5
----
-
 # You Can't Scale Your Way Out of a Data Problem
 
 I fine-tuned a Qwen3-8B on a 113-category consumer complaint classification task with a severe long tail using the same basic LoRA classification setup I used on the smaller models (rank 16, alpha 32, classification head). It scored 0.271 macro F1. The Qwen2.5-3B scored 0.270.

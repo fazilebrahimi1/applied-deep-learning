@@ -1,10 +1,3 @@
----
-title: "When Your \"Ready to Use\" Dataset Has the Same Category Listed Twice"
-layout: default
-parent: Blog
-nav_order: 9
----
-
 # When Your "Ready to Use" Dataset Has the Same Category Listed Twice
 
 `determined-ai/consumer_complaints_medium` is a good teaching dataset. Pre-split, business-realistic, multiclass, compute-friendly. 64,000 training examples. 153 issue categories.

@@ -1,10 +1,3 @@
----
-title: "Picking a Model for Teaching"
-layout: default
-parent: Blog
-nav_order: 12
----
-
 # Picking a Model for Teaching
 
 Picking a model for a research project: check the benchmarks, try it, move on. Picking a model for a teaching lab that 30 students will run for six weeks on free hardware: different exercise entirely.

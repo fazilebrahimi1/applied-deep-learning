@@ -1,10 +1,3 @@
----
-title: "The Questions Model Cards Don't Answer"
-layout: default
-parent: Blog
-nav_order: 11
----
-
 # The Questions Model Cards Don't Answer
 
 Model cards tell you GLUE scores, parameter counts, and license terms. They don't tell you what happens when a non-expert runs the full workflow on constrained hardware.

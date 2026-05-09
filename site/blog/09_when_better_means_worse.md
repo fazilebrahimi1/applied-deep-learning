@@ -1,10 +1,3 @@
----
-title: "When Better Means Worse"
-layout: default
-parent: Blog
-nav_order: 4
----
-
 # When Better Means Worse
 
 I applied class weighting to a 113-category text classifier. Accuracy dropped five points. Macro F1 improved. Ten classes that the model had never once predicted correctly started getting nonzero F1.

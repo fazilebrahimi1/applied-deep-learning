@@ -27,9 +27,3 @@ Over six weeks, you work on one cumulative problem: classifying consumer financi
 | 5 | [Quantization and decoder economics](site/week5.html) | May 6 | Released |
 | 6 | [Distillation and final model decision](site/week6.html) | May 13 | Released |
 
-## Latest from the Blog
-
-**[Distillation is mostly a calibration regularizer. There's a cheaper one.](site/blog/12_temperature_scaling_beats_distillation.html)** — A one-parameter post-hoc fix reproduced more of distillation's ECE improvement than the distillation itself did. KD won on NLL. The recipes are not interchangeable, and which one you want depends on t
-
-[All posts →](site/blog/)
-

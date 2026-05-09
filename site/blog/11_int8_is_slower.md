@@ -1,10 +1,3 @@
----
-title: "Your int8 Quantization Is 2.5× Slower Than fp16"
-layout: default
-parent: Blog
-nav_order: 2
----
-
 # Your int8 Quantization Is 2.5× Slower Than fp16
 
 The LLM.int8 paper from 2022 told you this would happen. The blog tutorials skip that part.

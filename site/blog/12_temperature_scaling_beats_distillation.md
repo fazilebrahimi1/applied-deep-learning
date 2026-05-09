@@ -1,10 +1,3 @@
----
-title: "Distillation is mostly a calibration regularizer. There's a cheaper one."
-layout: default
-parent: Blog
-nav_order: 1
----
-
 # Distillation is mostly a calibration regularizer. There's a cheaper one.
 
 A one-parameter post-hoc fix reproduced more of distillation's ECE improvement than the distillation itself did. KD won on NLL. The recipes are not interchangeable, and which one you want depends on the metric your deployment actually consumes.

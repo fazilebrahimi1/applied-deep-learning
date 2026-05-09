@@ -1,10 +1,3 @@
----
-title: "No magic, but first: a transformers PR"
-layout: default
-parent: Blog
-nav_order: 3
----
-
 # No magic, but first: a transformers PR
 
 The core teaching arc of my applied deep learning course at CEU is simple: **there's no magic**. Every part of a modern NLP pipeline — the data mix, the tokenizer, the model weights, the training recipe — is a thing you could inspect and rebuild yourself, given enough time. The easiest way to demonstrate that claim is to teach with models where every part actually is public.

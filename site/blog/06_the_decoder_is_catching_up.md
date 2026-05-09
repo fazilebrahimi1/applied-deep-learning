@@ -1,10 +1,3 @@
----
-title: "44% Accuracy Without a Single Training Example"
-layout: default
-parent: Blog
-nav_order: 7
----
-
 # 44% Accuracy Without a Single Training Example
 
 I gave Opus 4.6 a list of 113 CFPB complaint categories and asked it to classify consumer complaints. No labeled examples in the prompt. No fine-tuning.
