@@ -21,6 +21,10 @@ Same model, same data, same epochs, same seed. The vanilla student trained with 
 
 T-scaling drops ECE by 0.1045. KD drops it by 0.0762. Ratio: 137%. Macro F1 is identical pre and post T-scaling because temperature scaling can't change argmax. The F1 gain from KD here is inside bootstrap noise on most tiers.
 
+![Reliability diagram showing vanilla raw bowed below the diagonal (overconfident), Vanilla+T hugging the diagonal (well calibrated), Distilled in between.](images/blog12_reliability.png)
+
+ECE is literally the area between each curve and the diagonal. The cheap fix pulls the blue curve onto the line. KD only gets part of the way there.
+
 ## Why ECE moves and NLL doesn't
 
 Temperature scaling divides every logit by a positive scalar and re-softmaxes. Dividing all logits by the same number doesn't change which one is largest, so accuracy stays put. The probability ratios shift in a specific way: `p_i / p_j` becomes `(p_i / p_j)^(1/T)`. It sharpens or flattens the whole distribution at once.
@@ -28,6 +32,10 @@ Temperature scaling divides every logit by a positive scalar and re-softmaxes. D
 ECE asks whether top-1 confidence tracks empirical accuracy. A single global rescale is exactly the operation that pulls those two onto the same line.
 
 NLL is different. It penalizes probability placed on wrong classes too, not just miscalibration on the winning one. T-scaling can't push class 53's mass toward class 12 on one example and toward class 89 on another. The rescaling is global, not per-example. KD trains against the teacher's full softmax for each example. T-scaling never sees that information. That is the cleanest explanation for KD's NLL win here.
+
+![Scatter plot with NLL on the X axis and ECE on the Y axis. Three points: vanilla raw in the upper right, Vanilla+T below it (lower ECE), Distilled to the left (lower NLL). Arrows from vanilla raw show that T-scaling drops you straight down on ECE while KD takes you diagonally down and to the left.](images/blog12_ece_nll_scatter.png)
+
+Two arrows from the same starting point, two different corners of the plane. Vanilla+T lands in the low-ECE corner but barely moves on NLL. Distilled trades off less ECE drop for a real NLL drop. You can't get to one corner with the other method.
 
 ## Han Guo 2021 explains why this works
 
