@@ -25,11 +25,11 @@ Over six weeks, you work on one cumulative problem: classifying consumer financi
 | 3 | [Parameter-efficient adaptation (LoRA/PEFT)](site/week3.html) | Apr 22 | Released |
 | 4 | [Error diagnosis: slices, calibration, and cross-model analysis](site/week4.html) | Apr 29 | Released |
 | 5 | [Quantization and decoder economics](site/week5.html) | May 6 | Released |
-| 6 | Distillation and final model decision | May 13 | — |
+| 6 | [Distillation and final model decision](site/week6.html) | May 13 | Released |
 
 ## Latest from the Blog
 
-**[Your int8 Quantization Is 2.5× Slower Than fp16](site/blog/11_int8_is_slower.html)** — The LLM.int8 paper from 2022 told you this would happen. The blog tutorials skip that part.
+**[Distillation is mostly a calibration regularizer. There's a cheaper one.](site/blog/12_temperature_scaling_beats_distillation.html)** — A one-parameter post-hoc fix reproduced more of distillation's ECE improvement than the distillation itself did. KD won on NLL. The recipes are not interchangeable, and which one you want depends on t
 
 [All posts →](site/blog/)
 

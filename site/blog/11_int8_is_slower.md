@@ -2,7 +2,7 @@
 title: "Your int8 Quantization Is 2.5× Slower Than fp16"
 layout: default
 parent: Blog
-nav_order: 1
+nav_order: 2
 ---
 
 # Your int8 Quantization Is 2.5× Slower Than fp16

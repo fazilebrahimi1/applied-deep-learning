@@ -11,6 +11,9 @@ Notes from building this course — what worked, what broke, what surprised us.
 
 ---
 
+**[Distillation is mostly a calibration regularizer. There's a cheaper one.](12_temperature_scaling_beats_distillation.html)**
+A one-parameter post-hoc fix reproduced more of distillation's ECE improvement than the distillation itself did. KD won on NLL. The recipes are not interchangeable, and which one you want depends on t
+
 **[Your int8 Quantization Is 2.5× Slower Than fp16](11_int8_is_slower.html)**
 The LLM.int8 paper from 2022 told you this would happen. The blog tutorials skip that part.
 

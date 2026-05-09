@@ -2,7 +2,7 @@
 title: "44% Accuracy Without a Single Training Example"
 layout: default
 parent: Blog
-nav_order: 6
+nav_order: 7
 ---
 
 # 44% Accuracy Without a Single Training Example
